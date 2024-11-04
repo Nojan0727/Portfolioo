@@ -273,3 +273,7 @@ main
     border-radius: 8px;
     border: none;
 }
+.Interview-heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
