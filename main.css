@@ -205,13 +205,11 @@ main
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
-    
     margin-left: auto;
     margin-right: auto;
 }
 
 .text-listed-item {
-    text-align: center;
     justify-content: space-between;
     color: whitesmoke;
     font-size: 18px;
@@ -264,7 +262,11 @@ main
     justify-content: center;
     align-items: center;
 }
-
+.contact-heading{
+    text-align: center;
+    margin-top: 150px;
+    color: whitesmoke;
+}
 
 .video-frame {
     width: 100%;
@@ -274,5 +276,24 @@ main
 }
 .Interview-heading{
     font-size: 25px;
+    margin-bottom: 20px;
+}
+.link-contact-logo {
+    width: 50px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+
+}
+.act-button{
+background-color:#FFE998 ;
+    padding: 1em 2em;
+    color: black;
+    text-align: center;
+    justify-content: space-between;
+
+    font-size: 18px;
     margin-bottom: 20px;
 }
