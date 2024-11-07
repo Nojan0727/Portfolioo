@@ -197,8 +197,15 @@ main
 }
 
 .second-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.third-heading{
     font-size: 30px;
     margin-bottom: 20px;
+    line-height: 2;
+    color: whitesmoke;
 }
 
 .text-paragraph{
@@ -288,7 +295,7 @@ main
 
 }
 .act-button{
-background-color:#FFE998 ;
+    background: linear-gradient(135deg,#FFAA00,#FFD700,#FFD700 );
     padding: 1em 2em;
     color: black;
     text-align: center;
@@ -296,4 +303,5 @@ background-color:#FFE998 ;
 
     font-size: 18px;
     margin-bottom: 20px;
+
 }
