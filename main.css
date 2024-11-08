@@ -132,7 +132,6 @@ input[type="checkbox"] {
     accent-color: #f06d06;
     cursor: pointer;
 }
-main
 
 .global-reset {
     margin: 0;
@@ -168,6 +167,7 @@ main
     justify-content: space-around;
     padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .nav-link {
@@ -176,6 +176,7 @@ main
     padding: 5px 10px;
     font-size: 16px;
 }
+
 
 .nav-link:hover {
     background-color: #555;
@@ -186,7 +187,7 @@ main
     width: 50px;
 }
 
-.container-center {
+.container-center{
     margin-top: 150px;
     color: whitesmoke;
 }
@@ -304,4 +305,7 @@ main
     font-size: 18px;
     margin-bottom: 20px;
 
+}
+.active{
+    color: #FFE998;
 }
