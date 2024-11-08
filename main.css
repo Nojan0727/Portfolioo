@@ -9,21 +9,26 @@ body {
     margin: 0;
     padding: 0;
 }
+.body-background {
+    background-image: url(image/Parsi.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    animation: backgroundZoom 55s infinite alternate;
+}
+
+@keyframes backgroundZoom {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 200%;
+    }
+}
 
 html {
     scroll-behavior: smooth;
 }
-@keyframes zoomIn {
-    0% {
-        background-size: 170%;
-        background-position: center;
-    }
-    100% {
-        background-size: 170%;
-        background-position: top right;
-    }
-}
-
 div, header {
     max-width: 700px;
     margin: 100px auto;
@@ -33,7 +38,7 @@ div, header {
 }
 
 
-p {
+p,h1,h2,h3 {
     color: #D8D9D7;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     line-height: 1.6;
@@ -41,27 +46,17 @@ p {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #57370D;
-    padding: 10px 70px;
     font-size: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #FFE998;
     transition: color 0.3s ease;
 }
 
 a:hover {
     color: #735A4C;
-}
-
-a.logo {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
 }
 
 .video-container {
@@ -70,17 +65,24 @@ a.logo {
     overflow: hidden;
     background-color: #A69E94;
 }
+.video-frame {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
 
 .centered {
     margin-left: 70%;
     margin-right: 70%;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 
 form {
     background-color: white;
@@ -92,6 +94,7 @@ form {
     flex-direction: column;
     gap: 20px;
     margin-left: 140px;
+
 }
 
 label {
@@ -132,34 +135,10 @@ input[type="checkbox"] {
     accent-color: #f06d06;
     cursor: pointer;
 }
-
-.global-reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.full-height {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-
-.body-background {
-    background-image: url(image/Parsi.jpeg);
-    background-size: 120%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    color: white;
-    animation: backgroundZoom 30s infinite alternate;
-}
-
-@keyframes backgroundZoom {
-    0% {
-        background-size: 110%;
-    }
-    100% {
-        background-size: 120%;
-    }
+.contact-heading{
+    text-align: center;
+    margin-top: 150px;
+    color: whitesmoke;
 }
 
 .navbar {
@@ -219,7 +198,6 @@ input[type="checkbox"] {
 
 .text-listed-item {
     justify-content: space-between;
-    color: whitesmoke;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -237,12 +215,6 @@ input[type="checkbox"] {
     margin-bottom: 20px;
     border:3px solid black;
     color: #D8D9D7;
-}
-
-.main-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hobby-layout {
@@ -264,24 +236,6 @@ input[type="checkbox"] {
 }
 
 
-.hobby-video {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-heading{
-    text-align: center;
-    margin-top: 150px;
-    color: whitesmoke;
-}
-
-.video-frame {
-    width: 100%;
-    height: 300px;
-    border-radius: 8px;
-    border: none;
-}
 .Interview-heading{
     font-size: 25px;
     margin-bottom: 20px;
@@ -308,4 +262,12 @@ input[type="checkbox"] {
 }
 .active{
     color: #FFE998;
+}
+
+.selfie{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
